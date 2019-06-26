@@ -1,0 +1,15 @@
+// Import custom variables (overrides Bootstrap default variables)
+@import './variables.scss';
+
+// Import Bootstrap
+@import './bootstrap/bootstrap.scss';
+
+@import './fontawesome/css/all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic');
+
+// Import custom styles
+@import './global.scss';
+@import './navbar.scss';
+@import './masthead.scss';
+@import './portfolio.scss';
