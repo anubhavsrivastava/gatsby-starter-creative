@@ -146,10 +146,6 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="portfolio">
-      <Gallery images={img_set} />
-    </section>
-
     <section className="page-section bg-dark text-white">
       <div className="container text-center">
         <h2 className="mb-4">Free Download Gatsby Starter!</h2>
