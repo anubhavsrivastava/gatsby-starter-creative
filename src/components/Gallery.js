@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Lightbox from 'react-images';
+import Carousel from 'react-images';
 
 class Gallery extends Component {
   constructor() {
@@ -58,21 +58,21 @@ class Gallery extends Component {
 
     const gallery = images.map((obj, i) => {
       return (
-        <div key={obj.src} className="col-lg-4 col-sm-6">
+        <div key={obj.caption} className="col-lg-4 col-sm-6">
           <a
             onClick={e => this.openLightbox(i, e)}
             className="portfolio-box"
-            href={obj.src}
+            href={obj.source.regular}
           >
             <img
               className="img-fluid"
-              src={obj.thumbnail}
+              src={obj.source.thumbnail}
               alt={obj.description}
               title={obj.title}
             />
             <div className="portfolio-box-caption">
               <div className="project-category text-white-50">{obj.title}</div>
-              <div className="project-name">{obj.desc}</div>
+              <div className="project-name">{obj.description}</div>
             </div>
           </a>
         </div>
@@ -89,12 +89,9 @@ class Gallery extends Component {
     return (
       <>
         {this.renderGallery()}
-        <Lightbox
+        <Carousel
           currentImage={this.state.currentImage}
-          images={this.props.images.map(img => {
-            img.caption = `${img.title} - ${img.desc}`;
-            return img;
-          })}
+          views={this.props.images}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}

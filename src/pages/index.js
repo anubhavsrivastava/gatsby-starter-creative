@@ -9,42 +9,74 @@ import Header from '../components/Header';
 import ContactUs from '../components/ContactUs';
 import Gallery from '../components/Gallery';
 
+// TODO - move to a GraphQL search for import instead of a native import
+import image1Regular from '../assets/images/portfolio/fullsize/1.jpg';
+import image1Thumbnail from '../assets/images/portfolio/thumbnails/1.jpg';
+import image2Regular from '../assets/images/portfolio/fullsize/2.jpg';
+import image2Thumbnail from '../assets/images/portfolio/thumbnails/2.jpg';
+import image3Regular from '../assets/images/portfolio/fullsize/3.jpg';
+import image3Thumbnail from '../assets/images/portfolio/thumbnails/3.jpg';
+import image4Regular from '../assets/images/portfolio/fullsize/4.jpg';
+import image4Thumbnail from '../assets/images/portfolio/thumbnails/4.jpg';
+import image5Regular from '../assets/images/portfolio/fullsize/5.jpg';
+import image5Thumbnail from '../assets/images/portfolio/thumbnails/5.jpg';
+import image6Regular from '../assets/images/portfolio/fullsize/6.jpg';
+import image6Thumbnail from '../assets/images/portfolio/thumbnails/6.jpg';
+
 const img_set = [
   {
-    src: require('../assets/images/portfolio/fullsize/1.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/1.jpg'),
+    source: {
+      regular: image1Regular,
+      thumbnail: image1Thumbnail,
+    },
+    caption: 'Category - Project Name 1',
+    description: 'Project Name 1',
     title: 'Category',
-    desc: 'Project Name',
   },
   {
-    src: require('../assets/images/portfolio/fullsize/2.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/2.jpg'),
+    source: {
+      regular: image2Regular,
+      thumbnail: image2Thumbnail,
+    },
+    caption: 'Category - Project Name 2',
+    description: 'Project Name 2',
     title: 'Category',
-    desc: 'Project Name',
   },
   {
-    src: require('../assets/images/portfolio/fullsize/3.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/3.jpg'),
+    source: {
+      regular: image3Regular,
+      thumbnail: image3Thumbnail,
+    },
+    caption: 'Category - Project Name 3',
+    description: 'Project Name 3',
     title: 'Category',
-    desc: 'Project Name',
   },
   {
-    src: require('../assets/images/portfolio/fullsize/4.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/4.jpg'),
+    source: {
+      regular: image4Regular,
+      thumbnail: image4Thumbnail,
+    },
+    caption: 'Category - Project Name 4',
+    description: 'Project Name 4',
     title: 'Category',
-    desc: 'Project Name',
   },
   {
-    src: require('../assets/images/portfolio/fullsize/5.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/5.jpg'),
+    source: {
+      regular: image5Regular,
+      thumbnail: image5Thumbnail,
+    },
+    caption: 'Category - Project Name 5',
+    description: 'Project Name 5',
     title: 'Category',
-    desc: 'Project Name',
   },
   {
-    src: require('../assets/images/portfolio/fullsize/6.jpg'),
-    thumbnail: require('../assets/images/portfolio/thumbnails/6.jpg'),
+    source: {
+      regular: image6Regular,
+      thumbnail: image6Thumbnail,
+    },
+    caption: 'Category - Project Name 6',
+    description: 'Project Name 6',
     title: 'Category',
-    desc: 'Project Name',
   },
 ];
 const IndexPage = () => (
